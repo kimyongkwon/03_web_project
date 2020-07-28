@@ -11,6 +11,10 @@ function deleteToDo(event) {
   const li = btn.parentNode;
   toDoList.removeChild(li);
 
+  if (toDoList.childElementCount < 5) {
+    toDoForm.classList.remove("form");
+  }
+
   const cleanToDos = toDos.filter(function (toDo) {
     return toDo.id !== parseInt(li.id);
   });
@@ -32,9 +36,14 @@ function paintTodo(text) {
   const newId = toDos.length + 1;
   span.innerText = text;
   li.appendChild(span);
+  // li.append(" ");
   li.appendChild(delBtn);
   li.id = newId;
   toDoList.appendChild(li);
+
+  if (toDoList.childElementCount >= 5) {
+    toDoForm.classList.add("form");
+  }
 
   const toDoObj = {
     text: text,

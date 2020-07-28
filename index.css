@@ -2,13 +2,60 @@ body {
   background-color: aquamarine;
 }
 
+.all_contents {
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* .js-clock {
+  margin-bottom: 10px;
+} */
+
+.js-clock h1 {
+  font-size: 150px;
+  color: black;
+  margin-bottom: 0px;
+  /* margin-bottom: 10px; */
+}
+
 .form,
 .greetings {
   display: none;
 }
 
+.js-form input,
+.js-toDoform input {
+  font-size: 20px;
+}
+
 .showing {
   display: block;
+}
+
+.js-greetings {
+  color: black;
+  font-size: 30px;
+  margin: 0px;
+}
+
+.js-weather {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 43%;
+  top: 90%;
+}
+
+.js-toDoList {
+  width: 50%;
+  text-align: left;
+  margin-left: 300px;
+  color: white;
+  font-size: 30px;
+  /* text-align: center; */
+  /* margin-left: 30px; */
+  /* color: white; */
+  /* font-size: 20px; */
 }
 
 @keyframes fadeIn {
