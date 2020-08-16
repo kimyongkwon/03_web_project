@@ -1,10 +1,15 @@
 body {
-  background-color: aquamarine;
+  background-color: rgb(190, 235, 220);
 }
 
 .all_contents {
-  padding-top: 100px;
+  width: 35%;
+  margin: auto;
+  margin-top: 200px;
   text-align: center;
+  background: rgb(100, 105, 89);
+
+  border-radius: 20px;
 }
 
 /* .js-clock {
@@ -12,7 +17,7 @@ body {
 } */
 
 .js-clock h1 {
-  font-size: 150px;
+  font-size: 70px;
   color: black;
   margin-bottom: 0px;
   /* margin-bottom: 10px; */
@@ -26,6 +31,7 @@ body {
 .js-form input,
 .js-toDoform input {
   font-size: 20px;
+  margin: 10px 0px;
 }
 
 .showing {
@@ -35,7 +41,7 @@ body {
 .js-greetings {
   color: black;
   font-size: 30px;
-  margin: 0px;
+  margin: 20px 0px;
 }
 
 .js-weather {
@@ -49,22 +55,13 @@ body {
 .js-toDoList {
   width: 50%;
   text-align: left;
-  margin-left: 300px;
+  margin-left: 50px;
   color: white;
   font-size: 30px;
   /* text-align: center; */
   /* margin-left: 30px; */
   /* color: white; */
   /* font-size: 20px; */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .bgImage {
@@ -75,4 +72,13 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

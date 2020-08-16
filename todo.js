@@ -29,7 +29,7 @@ function saveToDos() {
 function paintTodo(text) {
   const li = document.createElement("ul");
   const delBtn = document.createElement("button");
-  delBtn.innerHTML = "X";
+  delBtn.innerText = "❌";
   delBtn.addEventListener("click", deleteToDo);
 
   const span = document.createElement("span");
