@@ -10,6 +10,8 @@ body {
   background: rgb(100, 105, 89);
 
   border-radius: 20px;
+
+  z-index: 0;
 }
 
 .js-clock h1 {
@@ -98,6 +100,8 @@ body {
 
   text-align: center;
 
+  z-index: 2;
+
   transition: all 500ms ease;
 }
 
@@ -121,15 +125,134 @@ body {
 .menus__box__disappear {
   transform: translateX(-100%);
 }
-/* .calculator {
-  position: fixed;
-  top: 1%;
-  background-color: blue;
-} */
 
-/* .calculator i {
+.menus__box__calculator {
+  position: relative;
+  top: 5%;
+}
+
+.menus__box__calculator i {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.calculator__box {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 95%;
+  height: 100%;
+  background-color: black;
+  transition: all 500ms ease;
+
+  z-index: 1;
+}
+
+.calculator {
+  position: relative;
+  left: 25%;
+  top: 30%;
+  /* margin: auto !important; */
+  /* text-align: center  */
+}
+
+.calculator__box__appear {
+  transform: translateX(0%);
+}
+
+.calculator__box__disappear {
+  transform: translateX(-106%);
+}
+
+/* //////////////////////////////////////// */
+.container {
+  display: flex;
+  width: 50%;
+  justify-items: center;
+}
+
+/* first line */
+.board {
+  flex: 3.4;
+  margin-right: 10px;
+
+  background-color: transparent;
+  line-height: 50px;
+  border-radius: 5px;
+
+  text-align: right;
+}
+
+.board span {
+  margin-right: 20px;
+}
+
+.board,
+.calculator button {
+  color: white;
   font-size: 30px;
-} */
+}
+
+.cancle {
+  flex: 1;
+  text-align: center;
+
+  background-color: rgb(192, 189, 189);
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.line {
+  padding: 0px;
+}
+
+.line button {
+  flex: 1;
+
+  background-color: sienna;
+  line-height: 50px;
+  border-radius: 5px;
+
+  border: none;
+}
+
+.line button:nth-child(1),
+.line button:nth-child(2),
+.line button:nth-child(3) {
+  margin-right: 5px;
+}
+
+.number__zero {
+  flex: 2.1 !important;
+  background-color: aqua;
+}
+
+.oper__divide {
+  margin-right: 0 !important;
+}
+
+.oper__plus,
+.oper__minus,
+.oper__multi,
+.oper__divide {
+  background-color: orange !important;
+}
+
+@media screen and (max-width: 600px) {
+  .js-weather {
+    left: 25%;
+  }
+  .js-toDoList li {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menus__box {
+    left: -10%;
+    width: 50px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .all_contents {
@@ -143,14 +266,5 @@ body {
 
   .js-weather {
     left: 35%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .js-weather {
-    left: 25%;
-  }
-  .js-toDoList li {
-    font-size: 22px;
   }
 }
