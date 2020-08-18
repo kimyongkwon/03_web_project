@@ -6,6 +6,7 @@ const calculatorButton = document.querySelector(".menus__box__calculator");
 const calculatorBox = document.querySelector(".calculator__box");
 
 function menuBoxOpen() {
+  menuBox.classList.remove("menus__box__disappear");
   menuBox.classList.add("menus__box__appear");
 }
 

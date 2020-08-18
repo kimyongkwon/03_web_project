@@ -45,7 +45,7 @@ body {
   position: absolute;
   font-size: 30px;
   color: white;
-  top: 850px;
+  top: 90%;
   left: 43%;
 }
 
@@ -249,7 +249,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .menus__box {
-    left: -10%;
+    left: -8%;
     width: 50px;
   }
 }
@@ -266,5 +266,29 @@ body {
 
   .js-weather {
     left: 35%;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 380px) {
+  .js-form input,
+  .js-toDoform input {
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+
+  .js-clock h1 {
+    font-size: 50px;
+  }
+  .js-weather {
+    font-size: 25px;
+  }
+  .menus__box {
+    left: -14%;
+    width: 13%;
+  }
+
+  .calculator__box__appear {
+    transform: translateX(4%);
   }
 }
