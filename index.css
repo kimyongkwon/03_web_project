@@ -12,15 +12,10 @@ body {
   border-radius: 20px;
 }
 
-/* .js-clock {
-  margin-bottom: 10px;
-} */
-
 .js-clock h1 {
   font-size: 70px;
   color: black;
   margin-bottom: 0px;
-  /* margin-bottom: 10px; */
 }
 
 .form,
@@ -46,10 +41,10 @@ body {
 
 .js-weather {
   position: absolute;
-  color: white;
   font-size: 30px;
+  color: white;
+  top: 850px;
   left: 43%;
-  top: 90%;
 }
 
 .js-toDoList {
@@ -58,10 +53,6 @@ body {
   margin-left: 50px;
   color: white;
   font-size: 30px;
-  /* text-align: center; */
-  /* margin-left: 30px; */
-  /* color: white; */
-  /* font-size: 20px; */
 }
 
 .bgImage {
@@ -80,5 +71,86 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+.menus {
+  position: fixed;
+  top: 2%;
+  left: 1%;
+}
+
+.menus i {
+  font-size: 40px;
+}
+
+.menus i:hover {
+  cursor: pointer;
+}
+
+.menus__box {
+  position: fixed;
+  top: 0%;
+  left: -5%;
+  background-color: white;
+  width: 5%;
+  height: 100%;
+
+  text-align: center;
+
+  transition: all 500ms ease;
+}
+
+.menus__box i {
+  font-size: 25px;
+}
+
+.menus__box__arrow {
+  margin-top: 10px;
+  /* background-color: blue; */
+}
+
+.menus__box__arrow i {
+  cursor: pointer;
+}
+
+.menus__box__appear {
+  transform: translateX(100%);
+}
+
+.menus__box__disappear {
+  transform: translateX(-100%);
+}
+/* .calculator {
+  position: fixed;
+  top: 1%;
+  background-color: blue;
+} */
+
+/* .calculator i {
+  font-size: 30px;
+} */
+
+@media screen and (max-width: 1000px) {
+  .all_contents {
+    /* background-color: transparent; */
+    width: 70%;
+  }
+
+  .js-toDoList li {
+    font-size: 25px;
+  }
+
+  .js-weather {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .js-weather {
+    left: 25%;
+  }
+  .js-toDoList li {
+    font-size: 22px;
   }
 }

@@ -2,6 +2,11 @@
 <head>
   <title>someting</title>
   <meta charset="uft-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+    src="https://kit.fontawesome.com/c44b861241.js"
+    crossorigin="anonymous"
+  ></script>
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -20,13 +25,30 @@
       <input type="text" placeholder="Write a to do" />
     </form>
     <ul class="js-toDoList"></ul>
-
-    <b><span class="js-weather"></span></b>
   </section>
+
+  <a class="menus">
+    <i class="fas fa-bars"></i>
+  </a>
+
+  <div class="menus__box">
+    <div class="menus__box__arrow">
+      <i class="fas fa-arrow-left"></i>
+    </div>
+  </div>
+
+  <!-- <a class="calculator">
+    <i class="fas fa-calculator"></i>
+  </a> -->
+
+  <b><div class="js-weather"></div></b>
+
+  <!-- <span class="subMenu">hamberger</span> -->
 
   <script src="clock.js"></script>
   <script src="greeting.js"></script>
   <script src="todo.js"></script>
   <script src="bg.js"></script>
   <script src="weather.js"></script>
+  <script src="menus.js"></script>
 </body>
