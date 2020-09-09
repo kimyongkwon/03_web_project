@@ -8,7 +8,7 @@ const IMG_NUMBER = 3;
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `https://powderBlue91.github.io/03_web_project/images/${
+  image.src = `https://powderBlue91.github.io/chrome-momentum/images/${
     imgNumber + 1
   }.jpg`;
   image.classList.add("bgImage");
